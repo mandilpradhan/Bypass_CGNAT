@@ -1,4 +1,3 @@
-# Oracle Cloud - Creating
 Once you have signed up for your free account, you can create your VPS by following these steps:
 1. Log in to your [Oracle Cloud Account](https://cloud.oracle.com/) and click on Create a VM instance.
 [![Create](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/create_01_arrow.png)](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/create_01_arrow.png)
