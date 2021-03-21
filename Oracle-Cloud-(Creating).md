@@ -12,4 +12,5 @@ Once you have signed up for your free account, you can create your VPS by follow
 6. You will have to wait a few minutes for the VM to be created.  After it is created, you can view the servers information.
 [![Create](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/instance_01.png)](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/instance_01.png)
 You can now SSH into your server by using the Public IP Address and Username as shown on your page.
-7. Please continue with [Opening Up Ports](Oracle-Cloud--(Opening-Up-Ports))
+
+## Continue with [Opening Up Ports](Oracle-Cloud--(Opening-Up-Ports))
