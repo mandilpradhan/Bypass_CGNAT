@@ -10,8 +10,7 @@ Before you start this process, make sure you have:
 1. On your VPS, run
 ```
 sudo -i
-wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh"
-chmod 755 Oracle_Installer.sh
+wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh" && chmod 755 Oracle_Installer.sh
 ./Oracle_Installer.sh
 ```
 2. The installer will walk you through the installation process.  The first couple things it does is update/upgrades all your software.  This make take a few minutes.
@@ -25,8 +24,7 @@ chmod 755 Oracle_Installer.sh
 
 5. On your Local Server, run
 ```
-wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh"
-chmod 755 Oracle_Installer.sh
+wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh" && chmod 755 Oracle_Installer.sh
 <COMMAND PROVIDED TO YOU FROM VPS>
 ```
 6. If you added services to pass through, the script will ask you where those services point to.  If those services are hosted on the same Local Server you are running the script on, just press enter when prompted.  Otherwise you will need to provide the IP address of the device that is hosting the service.  
