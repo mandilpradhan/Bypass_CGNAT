@@ -1,2 +1,2 @@
-Digital Ocean
-Oracle Cloud
+* Digital Ocean
+* Oracle Cloud
