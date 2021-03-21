@@ -1,4 +1,3 @@
-# Oracle Cloud - Opening Up Ports
 Oracle Cloud blocks most traffic into your VM by default.  In order for traffic to be able to access your VM, follow these steps.
 1. Log in to your [Oracle Cloud Account](https://cloud.oracle.com/compute/instances) and access your VM's Instance Page.
 2. Select the Subnet link in the Primary VNIC section.
