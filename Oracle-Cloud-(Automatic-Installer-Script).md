@@ -10,7 +10,7 @@ Before you start this process, make sure you have:
 1. On your VPS, run
 ```
 sudo -i
-wget "https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/Oracle_Installer.sh"
+wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh"
 chmod 755 Oracle_Installer.sh
 ./Oracle_Installer.sh
 ```
