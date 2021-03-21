@@ -1,21 +1,5 @@
 # Bypassing a CGNAT with Wireguard
-
-## Contents
-1. [VPS Setup](#1-vps-setup)
-   1. [Locking down your server](#1a-locking-down-your-server)
-   2. [System config](#1b-system-config)
-   3. [Installing Wireguard](#1c-installing-wireguard)
-2. [Home Server Setup](#2-home-server-setup)
-   1. [System Config](#2a-system-config)
-   2. [Installing Wireguard](#2b-installing-wireguard)
-3. [Starting Wireguard](#3-starting-wireguard)
-4. [Limiting Access](#4-limiting-access)
-5. [Optional Extras](#5-optional-extras)
-6. [Troubleshooting](#6-troubleshooting)
-7. [All Done/References](#7-all-done-references)
-8. [Thanks](#8-thanks)
-
-# Overview
+## Overview
 Before switching ISPs, I had a public IP that allowed me to use port forwarding on my router to pass traffic to services hosted on my internal network.  My new ISP uses a CGNAT, so I had to find a workaround.  I chose this path, because it keeps pretty much everything the same for my services.  The main things I wanted to do with my setup were:
 * Forward only specific traffic from the internet to my services
 * Provide my NPM (Nginx Proxy Manager) Server with clients real IPs (for fail2ban blocking purposes)
@@ -27,7 +11,7 @@ This tutorial assumes you have some basic knowledge about how to use Ubuntu from
 
 Here is a basic diagram of my configuration.  The IPs and ports will need to be changed by you to meet your requirements.
 
-![Topology](Basic%20Topology.png)
+![Topology](https://github.com/mochman/Bypass_CGNAT/raw/main/Basic%20Topology.png)
 
 For reference, here are all the IPs, Ports, and Names that I will be using in this guide for you to reference and change as appropriate.
 
