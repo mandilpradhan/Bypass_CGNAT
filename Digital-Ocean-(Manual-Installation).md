@@ -168,3 +168,5 @@ You should see the ping replies.  If you don't please make sure you followed all
 sudo systemctl enable wg-quick@wg0
 ```
 on both machines to ensure that wireguard automatically starts.
+
+##Please continue with [Limiting Access](Digital-Ocean-(Limiting-Access))
