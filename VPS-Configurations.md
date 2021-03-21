@@ -1,0 +1,2 @@
+Digital Ocean
+Oracle Cloud
