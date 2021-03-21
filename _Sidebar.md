@@ -5,7 +5,7 @@
     2. [Installing Wireguard - Automated](Digital-Ocean-(Automatic-Installer-Script))
     3. [Installing Wireguard - Manual](Digital-Ocean-(Manual-Installation))
     4. Post Install
-       * [Limiting Access]()
+       * [Limiting Access](Digital-Ocean-(Limiting-Access))
   * **Oracle Cloud**
     1. [Creating the VM](Oracle-Cloud-(Creating))
     2. [Opening up Oracle Cloud Ports](Oracle-Cloud--(Opening-Up-Ports))
