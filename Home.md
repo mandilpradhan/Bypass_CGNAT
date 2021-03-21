@@ -16,11 +16,11 @@ Here is a basic diagram of my configuration.  The IPs and ports will need to be 
 
 If this is something you want to try out for yourself, please follow along with this guide.  Right now, here are the providers I have tested out that I know are capable of routing traffic this way.
 
-1. [Digital Ocean](https://www.digitalocean.com/) ~$5 a month (as of Mar 2021)
+1. [Digital Ocean](https://www.digitalocean.com/) - The cheapest is ~$5 a month (as of Mar 2021)
    * [Creating the VM](Digital-Ocean-(Creating))
    * [Installing Wireguard - Automated](Digital-Ocean-(Automatic-Installer-Script))
    * [Installing Wireguard - Manual](Digital-Ocean-(Manual-Installation))
-2. [Oracle Cloud](https://www.oracle.com/cloud/) Free (as of Mar 2021)
+2. [Oracle Cloud](https://www.oracle.com/cloud/) - The cheapest is free (as of Mar 2021)
    * [Creating the VM](Oracle-Cloud-(Creating))
    * [Opening up Oracle Cloud Ports](Oracle-Cloud--(Opening-Up-Ports))
    * [Installing Wireguard - Automated](Oracle-Cloud-(Automatic-Installer-Script))
