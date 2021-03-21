@@ -169,4 +169,4 @@ sudo systemctl enable wg-quick@wg0
 ```
 on both machines to ensure that wireguard automatically starts.
 
-##Please continue with [Limiting Access](Digital-Ocean-(Limiting-Access))
+## Please continue with [Limiting Access](Digital-Ocean-(Limiting-Access))
