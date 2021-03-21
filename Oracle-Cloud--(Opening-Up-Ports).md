@@ -12,6 +12,6 @@ Oracle Cloud blocks most traffic into your VM by default.  In order for traffic 
 [![Open ports](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/firewall_04_s.png)](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/firewall_04.png)
 7. You can verify that the rules have been added.
 [![Open ports](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/firewall_05_circ.png)](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/firewall_05_circ.png)
-8. You have opened up the ports from the Oracle Cloud Side.  To continue select:
+8. You have opened up the ports from the Oracle Cloud side.  To continue select:
    * [Automatic Installer](Oracle-Cloud-(Automatic-Installer-Script))
    * [Manual Install](Oracle-Cloud-(Manual-Installation))
