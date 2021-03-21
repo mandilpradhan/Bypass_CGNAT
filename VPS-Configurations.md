@@ -1,5 +1,8 @@
 # Links for VPS provider info.
 1. [Digital Ocean](https://www.digitalocean.com/)
+   * [Creating the VM]()
+   * [Installing Wireguard - Automated]()
+   * [Installing Wireguard - Manual]()
 2. [Oracle Cloud](https://www.oracle.com/cloud/)
    * [Creating the VM](Oracle-Cloud-(Creating))
    * [Opening up Oracle Cloud Ports](Oracle-Cloud--(Opening-Up-Ports))
