@@ -3,5 +3,5 @@
 2. Oracle Cloud
    * [Creating the VM](Oracle-Cloud-(Creating))
    * [Opening up Oracle Cloud Ports](Oracle-Cloud--(Opening-Up-Ports))
-   * [Installing Wireguard with the script](Oracle-Cloud-(Automatic-Installer-Script))
-   * [Installing Wireguard manually](Oracle-Cloud-(Manual-Installation))
+   * [Installing Wireguard - Automated](Oracle-Cloud-(Automatic-Installer-Script))
+   * [Installing Wireguard - Manual](Oracle-Cloud-(Manual-Installation))
