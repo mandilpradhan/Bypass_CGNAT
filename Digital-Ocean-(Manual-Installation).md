@@ -1,3 +1,13 @@
+## Contents
+1. [VPS Setup](#1-vps-setup)
+   1. [Locking down your server](#1a-locking-down-your-server)
+   2. [System config](#1b-system-config)
+   3. [Installing Wireguard](#1c-installing-wireguard)
+2. [Home Server Setup](#2-home-server-setup)
+   1. [System Config](#2a-system-config)
+   2. [Installing Wireguard](#2b-installing-wireguard)
+3. [Starting Wireguard](#3-starting-wireguard)
+
 Here is a basic diagram of my configuration.  The IPs and ports will need to be changed by you to meet your requirements.
 
 ![Topology](https://github.com/mochman/Bypass_CGNAT/raw/main/Basic%20Topology.png)
@@ -14,6 +24,7 @@ Home Assistant IP | 192.168.2.6 | 1234 | The IP:Port of another service that NPM
 Synology NAS | 192.168.2.4 | 5001 | The IP:Port of another service that NPM doesn't provide routing for (Should already exist / Synology NAS is just an example)
 Docker Server App | 192.168.2.7 | 1194 | The IP:Port of another service that NPM doesn't provide routing for (Should already exist / OpenVPN is an example)
 
+# 1. VPS Setup
 ***This tutorial will assume you are running Ubuntu 20.04 on both your VPS and Local Server.***
 
 ## 1a. Locking down your server
