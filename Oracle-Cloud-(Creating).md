@@ -3,7 +3,7 @@ Once you have signed up for your free account, you can create your VPS by follow
 1. Log in to your [Oracle Cloud Account](https://cloud.oracle.com/) and click on Create a VM instance.
 [![Create](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/create_01_arrow.png)](https://github.com/mochman/Bypass_CGNAT/raw/main/Oracle%20Cloud/images/create_01_arrow.png)
 2. Click on Edit in the Placement and hardware section.
-[![Create](https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/images/create_02_arrow.png)](https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/images/create_02_arrow.png)
+[![Create](/images/create_02_arrow.png)](https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/images/create_02_arrow.png)
 3. Click on Change Image.
 [![Create](https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/images/create_03_arrow.png)](https://github.com/mochman/Bypass_CGNAT/raw/oracle/Oracle%20Cloud/images/create_03_arrow.png)
 4. Select Canonical Ubuntu and 20.04 Minimal, then click Select Image.
