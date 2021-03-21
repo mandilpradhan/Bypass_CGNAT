@@ -1,5 +1,5 @@
 * [Home](Home)
-* [Supported VPS Providers](Supported-VPS-Providers)
+* [Tested VPS Providers](Supported-VPS-Providers)
   * **Digital Ocean**
     1. [Creating the VM](Digital-Ocean-(Creating))
     2. [Installing Wireguard - Automated](Digital-Ocean-(Automatic-Installer-Script))
