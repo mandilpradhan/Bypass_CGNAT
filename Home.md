@@ -26,4 +26,4 @@ If this is something you want to try out for yourself, please follow along with 
    * [Installing Wireguard - Automated](Oracle-Cloud-(Automatic-Installer-Script))
    * [Installing Wireguard - Manual](Oracle-Cloud-(Manual-Installation))
 
-Select Creating the VM for the VPS you would like to use and follow the guide.
+Select "Creating the VM" above for the VPS you would like to use and follow the guide.
