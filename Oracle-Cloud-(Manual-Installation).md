@@ -1,0 +1,1 @@
+# Oracle Cloud (Manual Installation)
