@@ -27,7 +27,7 @@ chmod 755 Oracle_Installer.sh
 ```
 wget "https://raw.githubusercontent.com/mochman/Bypass_CGNAT/main/Oracle%20Cloud/Oracle_Installer.sh"
 chmod 755 Oracle_Installer.sh
-<COMMAND PROVIDED TO YOU FROM VPS>
+<COMMAND PROVIDED TO YOU FROM VPS SCRIPT>
 ```
 6. If you added services to pass through, the script will ask you where those services point to.  If those services are hosted on the same Local Server you are running the script on, just press enter when prompted.  Otherwise you will need to provide the IP address of the device that is hosting the service.  
 
@@ -37,8 +37,8 @@ chmod 755 Oracle_Installer.sh
 
 7. After all of that information is input, the script will give you a public key to copy and paste back into the VPS script.  Do so.
 
-8. After inputting the public key in the VPS, the wireguard service will be started and both servers will try to ping each other over the VPN to see if a connection is established.  You should hopefully be told a connection has been established.
+8. After inputting the public key in the VPS, the Wireguard service will be started and both servers will try to ping each other over the VPN to see if a connection is established.  You should hopefully be told a connection has been established.
 
-9. After a connection has been established, the wireguard service will be enabled so it will automatically start on boot.
+9. The installation script will ask you if you would like it to set up your firewall.  Saying no will allow all traffic from the internet through the VPN to your Local Server.  Saying yes will only allow traffic to access the ports you have specified previously.  Yes is recommended.
 
 ## Continue with [Limiting Access](Oracle-Cloud-(Limiting-Access))
