@@ -1,4 +1,4 @@
-# Links for VPS provider info.
+VPS provider info
 1. [Digital Ocean](https://www.digitalocean.com/)
    * [Creating the VM](Digital-Ocean-(Creating))
    * [Installing Wireguard - Automated](Digital-Ocean-(Automatic-Installer-Script))
