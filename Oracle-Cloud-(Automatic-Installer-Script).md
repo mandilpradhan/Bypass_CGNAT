@@ -41,4 +41,4 @@ chmod 755 Oracle_Installer.sh
 
 9. After a connection has been established, the wireguard service will be enabled so it will automatically start on boot.
 
-##Continue with [Limiting Access](Oracle-Cloud-(Limiting-Access))
+## Continue with [Limiting Access](Oracle-Cloud-(Limiting-Access))
