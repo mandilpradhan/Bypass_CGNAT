@@ -12,7 +12,7 @@
     3. [Installing Wireguard - Automated](Oracle-Cloud-(Automatic-Installer-Script))
     4. [Installing Wireguard - Manual](Oracle-Cloud-(Manual-Installation))
     5. Post Install
-       * [Limiting Access]()
+       * [Limiting Access](Oracle-Cloud-(Limiting-Access))
 * [Final Steps](Final-Steps)
 * [Optional Extras](Optional-Extras)
 * [[Troubleshooting]]
