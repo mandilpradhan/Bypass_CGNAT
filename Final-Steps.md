@@ -1,3 +1,3 @@
 The last thing you need to do is point your DNS records to the VPS Public IP.  You must do that through your own domain name host.  Since there are a large number of DNS providers, please search google for tutorials on how to do it using your specific provider.
 
-With that all set, you should be able to go to https://yourdomain.com, and it will send traffic to your VPS, which will route that traffic through the Wireguard VPN to your Local Server which will route as appropriate on your internal network.
+With that all set, you should be able to go to https://yourdomain.com or https://sub.yourdomain.com:8443 and it will send traffic to your VPS, which will route that traffic through the Wireguard VPN to your Local Server which will route as appropriate on your internal network.
