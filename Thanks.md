@@ -1,0 +1,1 @@
+If you want to use Digital Ocean as your VPS, please use this [referral link](https://m.do.co/c/7680995597d6).  You'll get $100 worth of credit over 60 days and I'll get $25 worth of service credit to keep my VPS up.  Thanks.
