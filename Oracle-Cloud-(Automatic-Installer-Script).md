@@ -1,4 +1,4 @@
-If you want to Manually install Wireguard and configure all the iptables rules, please go here.
+If you want to Manually install Wireguard and configure all the iptables rules, please go [here](Oracle-Cloud-(Manual-Installation)).
 
 # Using the automation script
 Before you start this process, make sure you have:
