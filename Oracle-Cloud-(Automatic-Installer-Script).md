@@ -40,3 +40,5 @@ chmod 755 Oracle_Installer.sh
 8. After inputting the public key in the VPS, the wireguard service will be started and both servers will try to ping each other over the VPN to see if a connection is established.  You should hopefully be told a connection has been established.
 
 9. After a connection has been established, the wireguard service will be enabled so it will automatically start on boot.
+
+##Continue with [Limiting Access](Oracle-Cloud-(Limiting-Access))
