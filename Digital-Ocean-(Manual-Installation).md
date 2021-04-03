@@ -28,7 +28,7 @@ Docker Server App | 192.168.2.7 | 1194 | The IP:Port of another service that NPM
 ***This tutorial will assume you are running Ubuntu 20.04 on both your VPS and Local Server.***
 
 ## 1a. Locking down your server
-I recommend following a system hardening guide like [this one](https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04) or [this one](https://medium.com/@jasonrigden/hardening-ssh-1bcb99cd4cef).  After this, I will assume you have kept sshd running on port 22.  If you changed the port, pay attention in the following steps and adjust as appropriate.
+I recommend following a system hardening guide like [this one](https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04), [this one](https://medium.com/@jasonrigden/hardening-ssh-1bcb99cd4cef), or [this one](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server).  After this, I will assume you have kept sshd running on port 22.  If you changed the port, pay attention in the following steps and adjust as appropriate.
 ## 1b. System config
 Enable forwarding by running:
 ```bash
