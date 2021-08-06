@@ -88,6 +88,8 @@ The first PostUp command will forward all TCP traffic (except our SSH traffic on
 The second PostUp command will do the same with UDP traffic (except our wireguard traffic on port 55107).
 The PostDown commands just remove what was created with the PostUp commands.
 
+### **I have been told that AWS provides you with both a public and private IP.  They said that in order to get the interface working, ~~you need to use the AWS private IP in the VPS config file~~.**
+
 # 2. Home Server Setup
 ## 2a. System config
 Enable forwarding by running:
