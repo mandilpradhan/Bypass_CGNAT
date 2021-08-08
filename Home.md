@@ -25,6 +25,7 @@ If this is something you want to try out for yourself, please follow along with 
    * [Opening up Oracle Cloud Ports](Oracle-Cloud--(Opening-Up-Ports))
    * [Installing Wireguard - Automated](Oracle-Cloud-(Automatic-Installer-Script))
    * [Installing Wireguard - Manual](Oracle-Cloud-(Manual-Installation))
+   * [Updating Wireguard - Automated](Oracle-Cloud--(Updating-Configuration-w-Script))
 3. [AWS Lightsail](https://aws.amazon.com/lightsail/) - The cheapest is $3.50 (as of Aug 2021)
    * [Creating the VM](AWS-Lightsail-(Creating))
    * [Installing Wireguard - Automated](AWS-Lightsail-(Automatic-Installer-Script))
