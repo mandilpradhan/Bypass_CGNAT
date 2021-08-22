@@ -11,8 +11,8 @@ sudo ufw allow 443/tcp
 sudo ufw allow 1234/tcp
 sudo ufw allow 5001/tcp
 sudo ufw allow 1194/udp
-sudo default allow routed
-sudo default deny incoming
+sudo ufw default allow routed
+sudo ufw default deny incoming
 sudo ufw enable
 ```
 
