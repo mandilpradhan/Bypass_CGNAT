@@ -41,4 +41,4 @@ chmod 755 Oracle_Installer.sh
 
 9. The installation script will ask you if you would like it to set up your firewall.  Saying no will allow all traffic from the internet through the VPN to your Local Server.  Saying yes will only allow traffic to access the ports you have specified previously.  Yes is recommended.
 
-## Continue with [Limiting Access](Oracle-Cloud-(Limiting-Access))
+## Continue with [Limiting Access](Limiting-Access)
