@@ -53,7 +53,8 @@ sudo nano /etc/wireguard/wg0.conf
 
 ### Traffic forwarding choices:
 You have 2 options on how to forward traffic.  You can forward everything through, or you can forward explicit ports.
-#### a. Forward everything:
+
+## a. Forward everything:
 If you use this option, iptables will be set up to forward all traffic (except ports 22 and your wireguard port) through to your local server.  This means that all port restricting/firewalling will need to be done on your local server.
 
 
@@ -89,7 +90,7 @@ PublicKey =
 AllowedIPs = 10.0.0.2/32
 ```
 
-#### b.Forward specific ports:
+## b. Forward specific ports:
 If you use this option, iptables will be set up to only forward the ports that you want through the VPN.  This is a more secure setup, since it opens your local server to less.  All port blocking/firewalling will need to be done on your VPS. 
 
 
