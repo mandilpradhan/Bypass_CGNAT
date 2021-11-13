@@ -50,6 +50,13 @@ Now open the wireguard configuration file.
 ```bash
 sudo nano /etc/wireguard/wg0.conf
 ```
+
+### Traffic forwarding choices:
+You have 2 options on how to forward traffic.  You can forward everything through, or you can forward explicit ports.
+#### a. Forward everything:
+If you use this option, iptables will be set up to forward all traffic (except ports 22 and your wireguard port) through to your local server.  This means that all port restricting/firewalling will need to be done on your local server.
+
+
 ### Use the following config:
 **Things you need to change:**
 Name | Item | Description
@@ -81,11 +88,55 @@ PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport 55107 -j DNA
 PublicKey = 
 AllowedIPs = 10.0.0.2/32
 ```
+
+#### b.Forward specific ports:
+If you use this option, iptables will be set up to only forward the ports that you want through the VPN.  This is a more secure setup, since it opens your local server to less.  All port blocking/firewalling will need to be done on your VPS. 
+
+
+### Use the following config:
+**Things you need to change:**
+Name | Item | Description
+--- | --- | ---
+*VPS IP* | 1.2.3.4 | The IP Address of your VPS
+*interface* | eth0 | Your internet facing interface.
+*TCP Ports* | 443,8443,5001 | a list of TCP ports to pass through the VPN.
+*UDP Ports* | 51820 | a list of UDP ports to pass through the VPN.
+
+**Note:** If you aren't going to forward any TCP or UDP ports, the respective *PostUp* and *PostDown* lines can be excluded from the following config.
+
+**Things you can change:**
+
+Name | Item | Description
+--- | --- | ---
+*Wireguard Port* | 55107 | Any unused port you like
+*Wireguard Server IP* | 10.0.0.1/24 | Any RFC1918 IP/CIDR.  Don't you your home network's IPs (192.168.2.0/24 in this tutorial).
+*Wireguard Host IP* | 10.0.0.2 | Same as above, make sure it's in the same address range.
+*Wireguard Host IP/32* | 10.0.0.2/32 | The above IP Address with /32 after it.
+```
+[Interface]
+PrivateKey = SHOULD_ALREADY_BE_FILLED_OUT
+ListenPort = 55107
+Address = 10.0.0.1/24
+
+PostUp = iptables -t nat -A PREROUTING -p tcp -i eth0 --match multiport --dports 443,8443,5001 -j DNAT --to-destination 10.0.0.2
+PostUp = iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to-source 1.2.3.4
+PostUp = iptables -t nat -A PREROUTING -p udp -i eth0 --match multiport --dports 51820 -j DNAT --to-destination 10.0.0.2
+
+PostUp = iptables -t nat -D PREROUTING -p tcp -i eth0 --match multiport --dports 443,8443,5001 -j DNAT --to-destination 10.0.0.2
+PostUp = iptables -t nat -D POSTROUTING -o eth0 -j SNAT --to-source 1.2.3.4
+PostUp = iptables -t nat -D PREROUTING -p udp -i eth0 --match multiport --dports 51820 -j DNAT --to-destination 10.0.0.2
+
+[Peer]
+PublicKey = 
+AllowedIPs = 10.0.0.2/32
+```
+
+
 We will fill in the PublicKey section after we install Wireguard on our local server.
 
 For your inforamtion, the PostUp and PostDown commands will run when wireguard makes/loses connection.
-The first PostUp command will forward all TCP traffic (except our SSH traffic on port 22) through the wireguard VPN to our server without changing any of the incomming IP addresses.
-The second PostUp command will do the same with UDP traffic (except our wireguard traffic on port 55107).
+The first two PostUp commands will forward the assigned TCP traffic through the wireguard VPN to our server without changing any of the incomming IP addresses.
+The third PostUp command will do the same with UDP traffic.
 The PostDown commands just remove what was created with the PostUp commands.
 
 # 2. Home Server Setup
