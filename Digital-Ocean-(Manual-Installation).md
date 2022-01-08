@@ -42,7 +42,7 @@ sudo sysctl -p
 After a `sudo apt update && sudo apt upgrade` run:
 ```bash
 sudo apt install wireguard
-sudo (umask 077 && printf "[Interface]\nPrivateKey = " | sudo tee /etc/wireguard/wg0.conf > /dev/null)
+umask 077 && printf "[Interface]\nPrivateKey = " | sudo tee /etc/wireguard/wg0.conf > /dev/null
 sudo wg genkey | sudo tee -a /etc/wireguard/wg0.conf | wg pubkey | sudo tee /etc/wireguard/publickey
 ```
 Those commands will install wireguard, create a file in `/etc/wireguard/wg0.conf`, place a generated private key into that file.  Then it prints out a public key **that you need to keep** (if you forget it, the public key is also in the `/etc/wireguard/publickey` file).
