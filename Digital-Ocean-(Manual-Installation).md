@@ -110,7 +110,7 @@ Name | Item | Description
 Name | Item | Description
 --- | --- | ---
 *Wireguard Port* | 55107 | Any unused port you like
-*Wireguard Server IP* | 10.0.0.1/24 | Any RFC1918 IP/CIDR.  Don't you your home network's IPs (192.168.2.0/24 in this tutorial).
+*Wireguard Server IP* | 10.0.0.1/24 | Any RFC1918 IP/CIDR.  Don't use your home network's IPs (192.168.2.0/24 in this tutorial).
 *Wireguard Host IP* | 10.0.0.2 | Same as above, make sure it's in the same address range.
 *Wireguard Host IP/32* | 10.0.0.2/32 | The above IP Address with /32 after it.
 ```
@@ -123,9 +123,9 @@ PostUp = iptables -t nat -A PREROUTING -p tcp -i eth0 --match multiport --dports
 PostUp = iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to-source 1.2.3.4
 PostUp = iptables -t nat -A PREROUTING -p udp -i eth0 --match multiport --dports 51820 -j DNAT --to-destination 10.0.0.2
 
-PostUp = iptables -t nat -D PREROUTING -p tcp -i eth0 --match multiport --dports 443,8443,5001 -j DNAT --to-destination 10.0.0.2
-PostUp = iptables -t nat -D POSTROUTING -o eth0 -j SNAT --to-source 1.2.3.4
-PostUp = iptables -t nat -D PREROUTING -p udp -i eth0 --match multiport --dports 51820 -j DNAT --to-destination 10.0.0.2
+PostDown = iptables -t nat -D PREROUTING -p tcp -i eth0 --match multiport --dports 443,8443,5001 -j DNAT --to-destination 10.0.0.2
+PostDown = iptables -t nat -D POSTROUTING -o eth0 -j SNAT --to-source 1.2.3.4
+PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 --match multiport --dports 51820 -j DNAT --to-destination 10.0.0.2
 
 [Peer]
 PublicKey = 
