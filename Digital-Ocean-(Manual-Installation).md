@@ -154,7 +154,7 @@ sudo sysctl -p
 We're going to do the same installation steps as we did on the VPS.
 ```bash
 sudo apt install wireguard
-sudo (umask 077 && printf "[Interface]\nPrivateKey = " | sudo tee /etc/wireguard/wg0.conf > /dev/null)
+umask 077 && printf "[Interface]\nPrivateKey = " | sudo tee /etc/wireguard/wg0.conf > /dev/null
 sudo wg genkey | sudo tee -a /etc/wireguard/wg0.conf | wg pubkey | sudo tee /etc/wireguard/publickey
 ```
 **Take this public key and place it in the `PublicKey = ` section on the VPS's `/etc/wireguard/wg0.conf` file.**
