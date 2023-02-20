@@ -18,5 +18,6 @@
 * [Final Steps](Final-Steps)
 * [Optional Extras](Optional-Extras)
 * [[Troubleshooting]]
+  * [Docker Specific](Docker-Troubleshooting)
 * [[References]]
 * [[Thanks]]
